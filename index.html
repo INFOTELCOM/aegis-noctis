@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#04060c">
+<meta http-equiv="refresh" content="1;url=https://aegis-noctis.base44.app">
+<title>AEGIS NOCTIS — Ouverture</title>
+<style>
+:root{color-scheme:dark;--bg:#04060c;--fg:#f1f5f9;--muted:#97a3b6;--cyan:#1de4f7;--amber:#ff8f3a}
+*{box-sizing:border-box}html,body{min-height:100%;margin:0}
+body{min-height:100vh;display:grid;place-items:center;text-align:center;padding:24px;background:radial-gradient(60% 50% at 50% 0%,#1de4f722,transparent),radial-gradient(50% 40% at 90% 100%,#ff8f3a1f,transparent),var(--bg);color:var(--fg);font:17px/1.6 system-ui,sans-serif}
+main{max-width:680px}.logo{width:64px;height:64px;border-radius:18px;margin:0 auto 26px;background:conic-gradient(var(--cyan),#9b6bff,var(--amber),var(--cyan));box-shadow:0 0 50px #1de4f77a;animation:spin 3s linear infinite}
+h1{font-size:clamp(28px,6vw,48px);line-height:1.1;letter-spacing:.14em;margin:0}p{color:var(--muted);margin:14px 0 28px}
+a{display:inline-block;padding:14px 30px;border-radius:99px;background:linear-gradient(100deg,var(--cyan),#6aa8ff);color:#03131a;font-weight:700;text-decoration:none}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.logo{animation:none}}
+</style>
+</head>
+<body><main>
+<div class="logo" aria-hidden="true"></div>
+<h1>AEGIS NOCTIS</h1>
+<p id="message">Ouverture de la plateforme…</p>
+<a href="https://aegis-noctis.base44.app">Ouvrir AEGIS NOCTIS</a>
+</main>
+<script>
+const target="https://aegis-noctis.base44.app";
+setTimeout(()=>{try{window.top.location.replace(target)}catch(e){location.href=target}},700);
+setTimeout(()=>{document.getElementById("message").textContent="Si la redirection ne fonctionne pas, utilisez le bouton ci-dessus."},2200);
+</script>
+</body></html>
