@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="refresh" content="1;url=https://aegis-noctis.base44.app">
+<title>AEGIS NOCTIS — Ouverture</title>
+<style>
+:root{--bg:#04060c;--fg:#f1f5f9;--mu:#97a3b6;--cy:#1de4f7;--am:#ff8f3a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{height:100%;margin:0}*{box-sizing:border-box}
+body{background:radial-gradient(60% 50% at 50% 0%,#1de4f722,transparent),radial-gradient(50% 40% at 90% 100%,#ff8f3a1f,transparent),var(--bg);color:var(--fg);font:400 17px/1.6 system-ui,sans-serif;display:grid;place-items:center;text-align:center;padding:24px}
+.lg{width:64px;height:64px;border-radius:18px;margin:0 auto 26px;background:conic-gradient(var(--cy),#9b6bff,var(--am),var(--cy));box-shadow:0 0 50px #1de4f77a;animation:sp 3s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+h1{font:700 clamp(28px,6vw,48px)/1.1 system-ui,sans-serif;letter-spacing:.14em;margin:0}
+p{color:var(--mu);margin:14px 0 28px}
+a{display:inline-block;padding:14px 30px;border-radius:99px;background:linear-gradient(100deg,var(--cy),#6aa8ff);color:#03131a;font-weight:600;text-decoration:none}
+a:focus-visible{outline:2px solid var(--am);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.lg{animation:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="lg" aria-hidden="true"></div>
+<h1>AEGIS NOCTIS</h1>
+<p id="m">Ouverture de la plateforme…</p>
+<a id="go" href="https://aegis-noctis.base44.app" target="_top" rel="noopener">Ouvrir le site</a>
+</main>
+<script>
+const U='https://aegis-noctis.base44.app';
+setTimeout(()=>{try{window.top.location.replace(U)}catch(e){try{location.replace(U)}catch(e2){}}},600);
+setTimeout(()=>{document.getElementById('m').textContent='Si la page ne s’ouvre pas toute seule, cliquez sur le bouton.'},2200);
+</script>
+</body>
+</html>
